@@ -519,3 +519,87 @@ footer.site-footer{ background:#102e24; }
 .sentinel-page .work-card p,.sentinel-page .work-card.lime p,.sentinel-page .work-card .tech{ color:#9aa8b3; }
 .sentinel-page .mod{ background:#12161b; border-color:#2b343d; color:#f5f8fa; }
 .sentinel-page .mod span{ color:#9aa8b3; }
+
+/* Cirqco Systems — product studio treatment. */
+:root{
+  --ink:#f5f4ff;
+  --ink-2:#aeb2c9;
+  --mute:#727a9d;
+  --paper:#101128;
+  --cream:#070816;
+  --line:rgba(174,185,232,.16);
+  --line-2:rgba(174,185,232,.34);
+  --forest:#67f7df;
+  --lime:#67f7df;
+  --lime-ink:#67f7df;
+  --lime-bg:rgba(103,247,223,.10);
+  --ok:#67f7df;
+  --desk:#090b1d;
+}
+body{
+  background:
+    radial-gradient(ellipse 65% 48% at 88% 4%,rgba(105,45,255,.22),transparent 68%),
+    radial-gradient(ellipse 48% 42% at 4% 48%,rgba(0,226,214,.14),transparent 72%),
+    #070816;
+  color:var(--ink);
+  background-image:none;
+}
+body::before{
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.5;
+  background-image:linear-gradient(rgba(156,167,235,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(156,167,235,.04) 1px,transparent 1px);
+  background-size:72px 72px; mask-image:linear-gradient(to bottom,#000,transparent 84%);
+}
+.site-nav{ background:rgba(7,8,22,.78); border-bottom-color:rgba(174,185,232,.1); }
+.site-nav.scrolled{ border-bottom-color:rgba(174,185,232,.18); }
+.nav-links a{ color:#aeb2c9; }
+.nav-links a:hover,.nav-links a.is-active{ color:#fff; }
+.logo{ color:#fff; }
+.btn{ border-radius:999px; letter-spacing:.06em; }
+.btn-ink{ background:linear-gradient(105deg,#67f7df,#8c61ff); color:#070816; border:none; }
+.btn-ink:hover{ background:linear-gradient(105deg,#93ffec,#ac8aff); }
+.btn-line{ color:#e8e8f4; border-color:rgba(174,185,232,.38); }
+.btn-line:hover{ color:#fff; border-color:#67f7df; background:rgba(103,247,223,.06); }
+.hero{ padding-top:96px; padding-bottom:72px; }
+.hero h1{ max-width:12ch; font-size:clamp(44px,6vw,72px); line-height:1.02; }
+.lede{ color:#bfc3d8; }
+.hero-meta{ border-color:var(--line); }
+.hero-meta dt{ color:#7781a4; }
+.hero-visual{ isolation:isolate; }
+.hero-visual::before{
+  content:""; position:absolute; inset:10% -12% 5% 8%; z-index:-1; border-radius:50%;
+  background:radial-gradient(circle,rgba(103,247,223,.17),rgba(140,97,255,.10) 38%,transparent 72%);
+  filter:blur(6px);
+}
+.hero-visual::after{ color:#8f95ba; }
+.art-phone{ border-color:rgba(103,247,223,.72); box-shadow:0 0 0 1px rgba(140,97,255,.26),18px 22px 56px rgba(0,0,0,.5); }
+.art-desk{ background:#12142b; border-color:rgba(103,247,223,.3); box-shadow:0 26px 64px rgba(0,0,0,.48); }
+.art-desk .bar{ background:#171a32; border-color:rgba(174,185,232,.13); }
+.proof{ background:rgba(17,19,43,.72); }
+.proof .wrap,.proof-item{ border-color:rgba(174,185,232,.15); }
+.proof-item b{ color:#67f7df; }
+.band{ background:rgba(14,16,37,.78); border-color:rgba(174,185,232,.13); }
+.section-head h2,.product-title,.page-hero h1{ color:#f7f6ff; }
+.section-head p,.product-sub,.prose p{ color:#aeb2c9; }
+.kicker{ color:#67f7df; }
+.chip{ color:#c9cee2; background:rgba(255,255,255,.035); border-color:rgba(174,185,232,.2); }
+.chip-live{ color:#67f7df; border-color:rgba(103,247,223,.32); background:rgba(103,247,223,.08); }
+.prod + .prod{ border-color:var(--line); }
+.prod-panel,.mod,.layers li,.stack-mini a,.stack-mini .surf{ background:rgba(18,20,45,.82); border-color:rgba(174,185,232,.16); }
+.prod-panel{ box-shadow:inset 0 1px rgba(255,255,255,.035),0 20px 45px rgba(0,0,0,.16); }
+.mod b,.layers li{ color:#f1f1fb; }
+.mod span,.layers em,.stack-mini span{ color:#9da5c2; }
+.work-card{ background:rgba(18,20,45,.78); border-color:rgba(174,185,232,.16); box-shadow:inset 0 1px rgba(255,255,255,.025); }
+.work-card h3{ color:#f4f3ff; }
+.work-card p,.work-card .tech{ color:#aeb2c9; }
+.work-card:hover{ border-color:rgba(103,247,223,.7); box-shadow:0 18px 38px rgba(0,0,0,.24),inset 0 1px rgba(255,255,255,.06); }
+.page-hero .lede,.crumbs{ color:#aeb2c9; }
+.crumbs a:hover{ color:#67f7df; }
+.invest-card{ border-color:rgba(174,185,232,.16); }
+.invest-copy{ background:linear-gradient(135deg,#131738,#251558); }
+.invest-facts{ background:rgba(18,20,45,.9); }
+.invest-facts dd{ color:#f3f3ff; }
+.contact-links a{ border-color:#67f7df; }
+.mobile-menu{ background:#090a1b; color:#f5f4ff; }
+.mobile-close,.nav-toggle{ border-color:rgba(174,185,232,.3); color:#fff; }
+.mobile-menu nav a{ color:#f5f4ff; }
+footer.site-footer{ background:#050611; border-top:1px solid rgba(174,185,232,.12); }
