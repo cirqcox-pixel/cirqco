@@ -459,11 +459,6 @@ body{
 }
 .site-nav{ background:rgba(247,248,244,.88); }
 .hero{ padding-top:78px; }
-.hero-grid > div:first-child{ position:relative; }
-.hero-grid > div:first-child::before{
-  content:"CIRQCO / 01"; display:block; margin-bottom:22px;
-  color:var(--forest); font-size:10px; font-weight:800; letter-spacing:.16em;
-}
 .hero h1,.page-hero h1{ letter-spacing:-.055em; }
 .hero h1 em{ color:var(--forest); }
 .kicker{ color:var(--forest); font-weight:800; }
@@ -480,8 +475,6 @@ body{
 .btn-ink:hover{ background:#102e24; }
 .btn-lime{ background:var(--lime); }
 .chip{ border-radius:3px; }
-.section-head{ position:relative; }
-.section-head::before{ content:"//"; display:block; color:var(--lime-ink); font-weight:800; letter-spacing:.12em; }
 .prod-panel,.work-card,.invest-card{ border-radius:4px; }
 .prod-panel{ background:#f0f2ed; }
 .mod,.layers li,.stack-mini a,.stack-mini .surf{ border-radius:3px; }
@@ -501,3 +494,28 @@ footer.site-footer{ background:#102e24; }
   .hero-visual::after{ display:none; }
   .page-hero{ padding-top:48px; }
 }
+
+/* Sentinel uses its own operational interface: dark, quiet and edge-first. */
+.sentinel-page{ background:#0a0b0d; color:#eef4f6; }
+.sentinel-page .page-hero,.sentinel-page .section{ background:#0a0b0d; }
+.sentinel-page .band{ background:#101318; border-color:#242b33; }
+.sentinel-page .lede{ color:#aebbc5; }
+.sentinel-page .crumbs,.sentinel-page .hero-note,.sentinel-page .section-head p,.sentinel-page .prose p,.sentinel-page .facts li{ color:#aebbc5; }
+.sentinel-page .crumbs a,.sentinel-page .prose a{ color:#eef4f6; }
+.sentinel-page h1,.sentinel-page h2,.sentinel-page h3,.sentinel-page h4{ color:#f5f8fa; }
+.sentinel-page .kicker,.sentinel-page .facts .n{ color:#5cd6ff; }
+.sentinel-page .chip-live{ color:#5cd6ff; border-color:rgba(92,214,255,.35); background:rgba(92,214,255,.08); }
+.sentinel-page .chip-live i{ background:#5cd6ff; }
+.sentinel-page .btn-ink{ background:#5cd6ff; color:#071016; }
+.sentinel-page .btn-ink:hover{ background:#8ae3ff; }
+.sentinel-page .btn-line{ border-color:#36424c; color:#eef4f6; }
+.sentinel-page .btn-line:hover{ border-color:#5cd6ff; }
+.sentinel-page .prod-panel-dark,.sentinel-page .prod-panel{ background:#13171c; border-color:#2b343d; }
+.sentinel-page .prod-panel-dark h3{ color:#5cd6ff; }
+.sentinel-page .layers li{ background:#0d1014; border-color:#2b343d; }
+.sentinel-page .layers em{ color:#8e9ca7; }
+.sentinel-page .work-card,.sentinel-page .work-card.lime{ background:#12161b; border-color:#2b343d; color:#f5f8fa; box-shadow:none; }
+.sentinel-page .work-card:hover{ border-color:#5cd6ff; box-shadow:none; transform:none; }
+.sentinel-page .work-card p,.sentinel-page .work-card.lime p,.sentinel-page .work-card .tech{ color:#9aa8b3; }
+.sentinel-page .mod{ background:#12161b; border-color:#2b343d; color:#f5f8fa; }
+.sentinel-page .mod span{ color:#9aa8b3; }
