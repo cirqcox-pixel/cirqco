@@ -1,0 +1,55 @@
+RewriteEngine On
+DirectoryIndex index.html
+
+# www → apex (production host only)
+RewriteCond %{HTTP_HOST} ^www\.cirqco\.com$ [NC]
+RewriteRule ^ https://cirqco.com%{REQUEST_URI} [R=301,L]
+
+# http → https (production host only)
+RewriteCond %{HTTP_HOST} ^(www\.)?cirqco\.com$ [NC]
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^ https://cirqco.com%{REQUEST_URI} [R=301,L]
+
+RewriteRule ^includes/ - [F,L]
+
+# Old CirqcoX / WordPress / property URLs → current site
+RewriteRule ^about/?$ /about-us [R=301,L]
+RewriteRule ^about-us\.html$ /about-us [R=301,L]
+RewriteRule ^coming-soon/?$ / [R=301,L]
+RewriteRule ^cirqcox/?$ /work [R=301,L]
+RewriteRule ^spend-earn-sustain/?$ / [R=301,L]
+RewriteRule ^property-management/?$ /about-us [R=301,L]
+RewriteRule ^nexacrm/?$ /work [R=301,L]
+RewriteRule ^services/?$ / [R=301,L]
+RewriteRule ^services/(.*)$ / [R=301,L]
+RewriteRule ^category/(.*)$ / [R=301,L]
+RewriteRule ^tag/(.*)$ / [R=301,L]
+RewriteRule ^author/(.*)$ /about-us [R=301,L]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Hide .php in the address bar
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteCond %{THE_REQUEST} !\s/+index\.php [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Static route directories serve their own index.html files.
+RewriteRule ^how-we-work/?$ /work [R=301,L]
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 10 minutes"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+</IfModule>

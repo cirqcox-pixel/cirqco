@@ -1,0 +1,27 @@
+# Cirqco
+# Kampala, Uganda technology company. Updated 2026-09-04.
+
+> Cirqco is a technology company in Kampala, Uganda, founded by Maxwell Odoi (Odoi Dickson Maxwell).
+> Mission: give Africa infrastructure the world has yet to imagine on its behalf — starting with startups, youth, everyday markets and the leadership willing to back them.
+> It builds and ships four core products: My Village, Medveta, Sentinel and Cruizly.
+
+Cirqco is not a property management company.
+Cirqco is not a "coming soon" crypto landing page.
+CirqcoX is one product (an investment platform), not the company homepage.
+NexaCRM is a retired product line; it is no longer part of Cirqco's active portfolio.
+
+## Products
+- My Village — digital enterprise operating system for African business, finance and trust (pre-seed, US$250,000). https://cirqco.com/my-village
+- Medveta — healthcare technology: Medveta HMS (hospital management — Patient Mobile, Doctor Mobile, HMS Desktop; live at https://medveta-hms.fastapicloud.dev/) and Medveta Distribution (pharmaceutical wholesale / B2B, in production). https://cirqco.com/medveta
+- Sentinel — Security Intelligence System (SIS): detect, analyze, identify and alert. Security Command, cameras, Sentinel Edge, cloud evidence, Starlink connectivity, access control (gate, reception, paddock crossing), farm herd monitoring (ear-tag registry, livestock tracks, pasture day analytics, Animal control in Command). Packages from Essential (250k UGX/mo), Business (480k), Farm (360k), Enterprise (980k). Live at https://sentinel-0ead9947.fastapicloud.dev/ · https://cirqco.com/sentinel
+- Cruizly — peer-to-peer vehicle rental with KYC, vehicle trust and a police portal (mobile, API, console). https://cirqco.com/cruizly
+
+## Clients & partners
+Cirqco has built for and consulted with: Aleph Hospitality (Dubai), Aziz Developments, Innovations Village Uganda, and Reach A Hand Uganda. https://cirqco.com/work#clients
+
+## Company
+- About: https://cirqco.com/about-us
+- How We Work (mission, clients, capacity-building): https://cirqco.com/work
+- Investors: https://cirqco.com/investors
+- Contact: cirqcox@gmail.com · +256 778 084 607
+- Founder: Maxwell Odoi (Odoi Dickson Maxwell), Founder & CEO

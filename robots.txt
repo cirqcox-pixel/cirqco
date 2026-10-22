@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /404.php
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/img/
+
+Sitemap: https://cirqco.com/sitemap.xml
